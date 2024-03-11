@@ -1,0 +1,243 @@
+
+* { 
+  box-sizing: border-box;
+  margin: 0px;
+}
+.wrapper{
+  width: 540px;
+  height: 960px;
+  border: 1px solid #AACDFF;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 7px 7px 39px 0px #0068FF40;
+}
+
+.wrapper__header{
+  width: 380px;
+  height: 47px;
+  margin-top: 50px;
+}
+
+.header__title{
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0068FF;
+  line-height: 47.36px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.wrapper__body{
+  width: 380px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.wrapper__input{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.input__email, .input__userName, .input__userPw, .input__userPwCheck{
+  width: 100%;
+  height: 60px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorMsg{
+  font-size: 10px;
+  font-weight: 400;
+  color: red;
+  font-style: bold;
+}
+
+.inputForm{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  border: 1px solid #D2D2D2;
+}
+
+#userEmail{
+  border: 1px solid #0068FF;
+}
+
+.wrapper__userPh{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userPh{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userPh1, .userPh2, .userPh3 {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.auth{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 30px 0px; 
+}
+
+.authNum__form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 12px 0px; 
+}
+
+.authNumber{
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: right;
+  color: #D2D2D2;
+  /* color: #0068FF;  abled */
+}
+.authBtn{
+  width: 120px;
+  height: 40px;
+  border: 1px solid #D2D2D2;
+  color: #D2D2D2;
+  background-color: white;
+  /* color: #0068FF; */
+  border-radius: 7px;
+}
+
+.authTimer__form{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.authTimer{
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: right;
+  
+  color: #0068FF; 
+}
+.authSuccessBtn{
+  width: 120px;
+  height: 40px;
+  border: 1px solid #D2D2D2;
+  /* color: white; */
+  color: #D2D2D2;
+  border-radius: 7px;
+  /* background-color: #0068FF; */
+  background-color: white;
+}
+
+.select__userAddress{
+  width: 100%;
+  height: 60px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userAddress{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #D2D2D2;
+  border-radius: 7px;
+}
+
+.checkbox__userSex{
+  width: 140px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.userSex__radio{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.userSex{
+  border: 1px solid #D2D2D2;
+  border-radius: 7px;
+}
+
+.divideLine{
+  width: 100%;
+  border-top: 1px solid #E6E6E6;
+  margin: 20px 0px;
+}
+
+.wrapper__footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.submit{
+  width: 380px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.submitBtn{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #0068FF;
+  border-radius: 10px;
+  background-color: white;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ 
+  <title>Game</title>
+  <link href = "./styles/game.css" rel = "stylesheet">
+  <script src = "./game.js"></script>
+
+</head>
+<body>
+  <div class = "wrapper">
+    <div class = "wrapper__header">
+      <div class = "header__title">
+        <div class = "title">GAME</div>
+        <div class = "subTitle">TODAY CHOICE</div>
+      </div>
+      <div class = "divideLine">
+      </div>
+    </div>
+
+    <div class = "game__container">
+      <img src = "./images/word.png">
+      <div class = "game__title">끝말잇기</div>
+      <div class = "game__subtitle">제시어 : <span id = "word">코드캠프</span></div>
+      <div class = "word__text">
+        <input type = "text" class = "textBox" id = "myWord" placeholder="단어를 입력하세요">
+        <button class = "search" onclick = "wordGame()">입력</button>
+      </div>
+      <div id = "result" class = "word__result">결과!</div>
+    </div>
+    <div class = "game__container">
+      <img src = "./images/lotto.png">
+      <div class = "game__title">LOTTO</div>
+      <div class = "game__subtitle">버튼을 누르세요.</div>
+
+      <div class = "game__number__box">
+        <span class = "box__number1">3</span>
+        <span class = "box__number2">5</span>
+        <span class = "box__number3">10</span>
+        <span class = "box__number4">24</span>
+        <span class = "box__number5">30</span>
+        <span class = "box__number6">34</span>
+      </div>
+
+      <div class = "game__button">
+        <button class = "gButton" id = "gButton">추첨</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

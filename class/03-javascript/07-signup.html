@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+  <title>Document</title>
+  <script src = "./07-signup.js"></script>
+  <style>
+    .userForm{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class = "userForm">
+    <input id = "userId" type = "text" oninput = "checkValidation()">
+    <input id = "userPw" type = "password" oninput = "checkValidation()">
+    <input id = "userPwChk" type = "password" placeholder="비밀번호 확인" oninput = "checkValidation()">
+    <button id = "submit" disabled = "true">회원가입</button>
+  </div>
+</body>
+</html>

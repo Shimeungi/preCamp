@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ 
+  <title>final</title>
+  <link href = "./final.css" rel = "stylesheet">
+  <script src = "./final.js"></script>
+</head>
+<body>
+  <div class = " wrapper">
+    <div class = "wrapper__header">
+      <div class = "header__title">코드캠프 회원가입</div>
+    </div>
+
+    <div class = "wrapper__body">
+      <div class = "wrapper__input">
+        <div class = "input__email">
+          <input id = "userEmail" class = "inputForm" type = "text" placeholder = "이메일을 입력해주세요">
+          <span id = "emailError" class = "errorMsg"></span>
+        </div>
+        <div class = "input__userName">
+          <input id = "userName" class = "inputForm" type = " text" placeholder="이름을 입력해주세요">
+          <span id = "nameError" class = "errorMsg"></span>
+        </div>
+        <div class = "input__userPw">
+          <input id = "userPw" class = "inputForm" type = " password" placeholder="비밀번호를 입력해주세요">
+          <span id = "pwError" class = "errorMsg"></span>
+        </div>
+        <div class = "input__userPwCheck">
+          <input id = "userPwCheck" class = "inputForm" type = " password" placeholder="비밀번호를 다시 입력해주세요">
+          <span id = "pwChkError" class = "errorMsg"></span>
+        </div>
+      </div>
+      
+      <div class = "wrapper__userPh">
+        <div class = "userPh">
+          <div class = "userPh1">
+            <input id = "ph1" class = "inputForm" type = "text" maxlength = "3" oninput = "ph1_to_ph2()"> -
+
+          </div>
+          <div class = "userPh2">
+            <input id = "ph2" class = "inputForm" type = "text" maxlength = "4" oninput = "ph2_to_ph3()"> - 
+          </div>
+          <div class = "userPh3">
+            <input id = "ph3" class = "inputForm" type = "text" maxlength = "4" oninput = "ph3_to_authOn()">
+          </div>
+        </div>
+        
+        <div class = "auth">
+          <div class = "authNum__form">
+            <span class = "authNumber" id = "authNumber"></span>
+            <button class = "authBtn" id = "authBtn" disabled = "true" onClick = "authBtn__onClick()" >인증번호 전송</button>
+          </div>
+          <div class = "authTimer__form">
+            <span class = "authTimer" id = "authTimer"></span>
+            <button class = "authSuccessBtn" id = "authSuccessBtn" disabled = "true" onClick = "authSuccessBtn__onClick()">인증 확인</button>
+          </div>
+         
+        </div>
+      </div>
+      <div class = "select__userAddress">
+        <select class = "userAddress" id = "userAddress">
+          <option selected disabled value = "0">지역을 선택하세요.</option>
+          <option value = "서울">서울</option>
+          <option value = "경기">경기</option>
+          <option value = "인천">인천</option>
+        </select>
+        <span id = "userAddressError" class = "errorMsg"></span>
+      </div>
+      <div class = "checkbox__userSex">
+        <div class = "userSex__radio">
+          <input type = "radio" id = "userSex" class = "userSex" value = "female" name = "userSex"> 여성
+          <input type = "radio" id = "userSex2" class = "userSex" value = "male" name = "userSex"> 남성
+        </div>
+        
+        <span id = "userSexError" class = "errorMsg"></span>
+      </div>
+      <div class = "divideLine"></div>
+    </div>
+    <div class = "wrapper__footer">
+      <div class = "submit">
+        <input type = "submit" id = "submitBtn" class = "submitBtn" value = "가입하기" disabled = "true" onclick="submit__onclick()">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
